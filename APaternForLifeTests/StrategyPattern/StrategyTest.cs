@@ -9,7 +9,7 @@ namespace APaternForLifeTests.StrategyPattern
     {
 
         [Theory, MemberData(nameof(TestData))]
-        public void DeveCalcularOsImpostosCorretamente(double TotalShoppingValue, ITaxes TaxToBePaid, double ExpectedReturn)
+        public void ItShouldCalculateTaxesCorrectly(double TotalShoppingValue, ITaxes TaxToBePaid, double ExpectedReturn)
         {
             Assert.Equal(ExpectedReturn, TaxCalculator.Calculador(TotalShoppingValue, TaxToBePaid));
         }
