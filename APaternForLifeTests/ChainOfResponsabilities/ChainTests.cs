@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Xunit;
 
-namespace APaternForLifeTests.ChainOfResponsabilities
+namespace APatternForLifeTests.ChainOfResponsabilities
 {
     public class ChainTests
     {

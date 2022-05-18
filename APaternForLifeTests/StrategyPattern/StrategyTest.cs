@@ -3,7 +3,7 @@ using StrategyPattern.Strategies;
 using System.Collections.Generic;
 using Xunit;
 
-namespace APaternForLifeTests.StrategyPattern
+namespace APatternForLifeTests.StrategyPattern
 {
     public class StrategyTest
     {

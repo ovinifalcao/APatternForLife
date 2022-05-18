@@ -23,3 +23,16 @@ The Case: You have to implement a code that support a lot multiple kinds of Taxe
 	}
 	     
 Look into the StrategyPattern folder to see the suggested response.
+
+### Chain Of Responsibilities
+This pattern aims to create a chain in which it is possible to pass a calling, here the idea is create some methods (using the same idea of a linked list of C) where which item in the chain knows who is the next one to be called. The main idea is: each one of the methods will decide if it will process the request, if it decides that it won't, it passes the request for the next member in the chain.
+
+The Case: For the following implementation imagine that you have a Loyalty program to an enterprise of rides (like uber) in which you give points according to the travel distance, the rules are the following:
+- If the travel was larger than 5km you will give one point per km.
+- If the travel was larger than 10km you will give two points per km.
+- If the travel was larger than 20km you will give three points per km.
+
+These points are not cumulative, it means, the program will apply only one of these rules for you, what fits better to the length of the travel, and the higher possible.
+
+In this example we were able to do something magical using the minimal code for each scenario. We didn't pass the Five Km verification if it was Ten or Fifteen first. We throw way the complexity and verifications that could cost something to the processor. Take a look into ChainOfResponsabilities folder.
+
