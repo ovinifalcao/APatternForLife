@@ -1,6 +1,5 @@
-
 # Welcome to A Pattern for Life!
-This is a project that aims to be a "Cheat Sheet" for some Design Patterns. Its name is a joke with the ideia f partner for a life time, like a romance between the coder and its code. This repo aims to be a easy way for me to find this patterns and keep this in mind, along the examples I'll use a lot of code samples from the community, but all the rights are reserved to the original authors.
+This is a project that aims to be a "Cheat Sheet" for some Design Patterns. Its name is a joke with the ideia of partner for a life time, like a romance between the coder and its code. This repo aims to be a easy way for me to find this patterns and keep this in mind, along the examples I'll use a lot of code samples from the community, but all the rights are reserved to the original authors.
 
 
 ### Strategy Pattern
@@ -52,3 +51,12 @@ The case: For the next scenario we’ll implement taxes over salaries, here in B
 -- Rooftop: 27%
 
 Take a look inside the Template Method Folder.
+
+### Decorator
+*Based on Refactoring Guru Approach*
+
+It is really hard to learn how to implement this pattern, but it's super easy to understand what kind of problems it solves. It aims to avoid the complexity of using inheritance, so you can add functionalities to base classes using this pattern instead of extending that base class. But as I said before this is not that simple to do, I highly recommend you to read the text about this pattern on the Refactoring Guru site, anyway, I'll try. 
+
+In our case we are extending functionalities to Notifications Class, in the beginning, this class was responsible only to get the message for the notification, now our job is to send this notification via Teams, hangout, and Slack's API. We cant modify that class to put this new implementation inside that class, it would be a violation of the Single Responsibility principle and Open-Closed principle too. So this pattern proposes to us an alternative to build classes that inherits the same interface of the base class and then extend the behavior using polymorphism.
+
+Take a look inside the Decorator Folder.

@@ -22,6 +22,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ChainOfResponsabilities\ChainOfResponsabilities.csproj" />
+    <ProjectReference Include="..\Decorator\Decorator.csproj" />
     <ProjectReference Include="..\StrategyPattern\StrategyPattern.csproj" />
     <ProjectReference Include="..\TemplateMethod\TemplateMethod.csproj" />
   </ItemGroup>

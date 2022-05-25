@@ -1,3 +1,4 @@
+
 # Welcome to A Pattern for Life!
 This is a project that aims to be a "Cheat Sheet" for some Design Patterns. Its name is a joke with the ideia f partner for a life time, like a romance between the coder and its code. This repo aims to be a easy way for me to find this patterns and keep this in mind, along the examples I'll use a lot of code samples from the community, but all the rights are reserved to the original authors.
 
@@ -36,3 +37,18 @@ These points are not cumulative, it means, the program will apply only one of th
 
 In this example we were able to do something magical using the minimal code for each scenario. We didn't pass the Five Km verification if it was Ten or Fifteen first. We throw way the complexity and verifications that could cost something to the processor. Take a look into ChainOfResponsabilities folder.
 
+
+### Template Method
+This pattern defines a way to reduce the code redundancy providing a Template path and delegating the core implementation to specialized classes that inherits a abstract class which the methods are used by the main code structure. Imagine that you have a default code behavior, for example a if, and you have a lot of cases to  check using the same structure, template method can help you to use OO to solve this problem.
+
+The case: For the next scenario we’ll implement taxes over salaries, here in Brazil taxes are distributed by salary range, but the most important part is, there is rooftop on this range, it means if your salary is greater than R$ 4660 the tax will be the same if it goes higher. The idea is to implement these rules over two taxes that we pay in our salaries here in Brazil, INSS (12%) and IR (11%). We’ll not consider the others ranges, our goal is to calculate the right taxes taking care of the rooftop according the following infos:
+
+ - INSS
+ -- Regular: 12%
+ -- Rooftop: 25%
+
+- IR
+-- Regular: 11%
+-- Rooftop: 27%
+
+Take a look inside the Template Method Folder.
